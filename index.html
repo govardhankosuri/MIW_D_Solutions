@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <title>MIW Digital solutions</title>
+    </head>
+    <style>
+        .navbar{
+                background-color: #1a1a1a;
+                color:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+                gap:20px;
+            }
+            
+            .menu a{
+                color:white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: 500;
+            }
+
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+                color: #ff9800;
+                display: flex;
+                align-items: center;
+                gap:10px;
+
+            }
+
+            .logo img{
+                height:80px;
+            }
+            .hero{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+                padding: 60px 50px;
+                background-color: blue;
+                flex-wrap: nowrap;
+            }
+            .hero-text{
+                flex: 1;
+                max-width: 500px;
+                min-width: 500px;
+            }
+            .hero-text h1{
+                font-size: 35px;
+                color: aqua;
+                margin-bottom: 20px;
+                line-height: 1.3;
+            }
+            .hero-text p{
+                font-size: 16px;
+                color: #ff9800;
+                line-height: 1.6;
+                margin-bottom: 10px;
+            }
+            .hero-image{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                max-width: 500px;
+            }
+            .hero-image-img{
+                width: 100%;
+                max-width: 55px;
+                border-radius: 8px;
+            }
+            
+            .image-banner{
+                position: relative;
+                margin: 0 auto;
+                padding-right: 100px;
+                width: 100%;
+                overflow: hidden;
+            }
+        
+            .image-banner .overlay-text{
+                position: absolute;
+                top: 40px;
+                right: 40px;
+                color: bisque;
+                text-align: right;
+                text-shadow: 2px 2px 6px red;
+                transform: translateY(-50%);
+                max-width: 450px;
+
+            }
+            .overlay-text h1{
+                font-size: 40px;
+                margin: 0 0 10px 0;
+            }
+            .overlay-text p{
+                font-size: 20px;
+                margin: 0;
+            }
+            .btn-learn-more{
+                display: inline-block;
+                background-color: orange;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 19px;
+                padding: 14px 30px;
+                border-radius: 8px;
+                margin-top: 20px;
+                transition: background-color 0.3s ease;
+            }
+            .btn-learn-more:hover{
+                background-color: blue;
+            }
+            .featured-projects{
+                text-align: center;
+                padding: 60px 40px;
+            }
+            .Featured-projects h1{
+                font-size: 45px;
+                color: red;
+                margin-bottom: 10px;
+            }
+            .project-grid{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                padding: 40px;
+                flex-direction: row;
+            }
+            .project-card{
+                width: 320px;
+                background-color: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px red;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+                text-align: center;
+                flex: 0 0 320px;
+                text-align: center;
+
+            }
+            .project-card:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 12px 25px red;
+            }
+            .project-card img{
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                display: block;
+            }
+            .project-card .project-info{
+                padding: 20px;
+            }
+            .project-card-h3{
+                margin-bottom: 10px;
+            }
+            .project-card p{
+                line-height: 1.5;
+            }
+            .cta-section{
+                background: #ff9800;
+                text-align: center;
+                padding: 80px 40px;
+                color: white;
+            }
+            .cta-section h2{
+                margin-bottom: 15px;
+            }
+            .cta-section p{
+                margin-bottom: 35px;
+            }
+            .btn-contact-us{
+                display: inline-block;
+                background-color: white;
+                color: green;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                padding: 19px 45px;
+                transition: transform 0.3s ease,box-shadow 0.3s ease;
+            }
+            .btn-contact-us:hover{
+                transform: translateY(-3px);
+                box-shadow: 0 px 20px green;
+            }
+
+        
+    </style>
+    <body>
+        <div class="navbar">
+           
+            <div class="logo">
+            <img src="miweb logo.png" rel="stylesheet"> MIW Digital Services</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html"> About Us</a>
+                <a href="seo.html">SEO Services</a>
+                <a href="case.html">Case Studies</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+        <div class="c">
+        <img src="img.png" height="600px" width="1800px" alt="image" >
+        <center><h1>Who we are</h1>
+        <p>Dedicated to delivering exceptional results.</p></center>
+            
+            </div>
+            </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="images-d.jpg" height="350px" width="500px" alt="image" style="margin-left: 150px; border-radius: 10px; box-shadow: green; padding-top: 50px;">
+    <br>
+    <br>
+    <br>
+    <Br>
+        <br>
+        
+        <div>
+        <h2 style="color: black; padding-top: 50px;"></h2>
+        <p>Grow your business with smart Digital Solutions.</p>
+        <p>We help business build a strong online presence through SEO .</p>
+        <p>We design and data-driven market strategies.
+            </p>
+        <p>Our team combines creativity with technology to deliver measurable and long term growth.</p>
+        <a href="contact.html" class="btn-learn-more">Learn More</a>
+        <br>
+        <br> 
+        
+        </div>
+        </div>
+        <section class="Featured-projects">
+            <h1>Featured-projects</h1>
+            <p class="subtitle">our lateset successful projects</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="desktop.jpg" alt="image">
+                    <div class="project-info">
+                        <h3>Corporate website</h3>
+            <p>MOdern website designed for productivity and collabration.</p>
+            </div>
+            </div>
+                <div class="project-card">
+                    <img src="corporate.webp" alt="image">
+                    <div class="project-info">
+                        <h3>It services company</h3>
+            <p>We mapped,organized,and managed systems,platforms,and infrastructure.</p>
+            </div>
+            </div>
+                <div class="project-card">
+                    <img src="miw.webp" alt="image">
+                    <div class="project-info">
+                        <h3>Software development</h3>
+            <p>We structured process of designing,coding,testing,and maintaing applications.</p>
+            </div>
+            </div>
+</div>
+
+</section>
+<section class="cta-section">
+    <h2>Ready to start your project?</h2>
+    <p>Lets build something extraordinary together</p>
+    <a href="contact.html" class="btn-contact-us">contact us</a>
+</section>
+<div style="background: linear-gradient(120deg,#272727); padding: 50px 20px; display: flex; justify-content: center;gap: 100px; flex-wrap: wrap; text-align: center;">
+        <div>
+            <h1 style="color: bisque; margin: 0;">250+</h1>
+            <p style="color: bisque; font-style: italic;">projects</p>
+
+        </div>
+
+        <div>
+            <h1 style="color: bisque; margin: 0;">150+</h1>
+            <p style="color: bisque; font-style: italic;">clients</p>
+
+        </div>
+        <div>
+            <h1 style="color: bisque; margin: 0;">12+</h1>
+            <p style="color: bisque; font-style: italic;">years</p>
+</div>
+<div>
+            <h1 style="color: bisque; margin: 0;">50+</h1>
+            <p style="color: bisque; font-style: italic;">Experts</p>
+</div>
+
+</div>
+<div style="background: #1b1b1b; padding: 20px; text-align: center;">
+    <p style="color: white; font-style: italic;margin: 0;">@ 2026 MIW Digital Services. All rights Resered</p>
+</div>
+    
+
+    </body>
+</html>
