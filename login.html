@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+
+            * {
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+
+            body {
+                margin:0;
+                padding:0;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                
+
+            }
+                
+            .navbar{
+             width: 100%;
+             background-color: #1a237e;
+             padding:12px 40px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+            }
+
+        
+            .logo{
+               color: #fff;
+               display:flex;
+               align-items: center;
+               gap: 10px;
+            }
+
+                .logo .img1{
+                   width: 30px;
+                   height:30px;
+                }
+
+                .logo h2 {
+                    color:white;
+                    font-size: 18px;
+                    margin:0;  
+                    padding: 0; 
+                }
+          
+
+                ul{
+                   list-style: none;
+                   display: flex;
+                   gap:20px;
+                }
+
+                ul li a{
+                    color: white;
+                    font-family: Arial;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+
+                ul li a:hover {
+                    color:#ffcc00;
+                }
+
+                form{
+                    display:flex;
+
+                }
+
+                .cont-form{
+                    margin-top: 80px;
+                    width:400px;
+                    height: 500px;
+                    margin-left: 500px;
+                    box-sizing: border-box;
+                    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+                    border: 15px;
+                    text-align: left;
+                    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   
+                }
+
+                .h22{
+                    justify-content: center;
+                    text-align: center;
+                    padding-top: 5px;
+                }
+
+                .p2{
+                    justify-content: center;
+                    text-align: center;
+                    padding-top: 5px;
+                }
+
+                .fields{
+                    padding-left: 60px;
+                    padding-top: 20px;
+                    
+                }
+
+                .btn{
+                    width: 70%;
+
+                    height: 40px;
+                    margin-top: 60px;
+                    margin-left: 65px;
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    background-color: #fff;
+                    color: #667eea;
+                    border:none;
+                    border-radius: 8px;
+                    cursor:pointer;
+                    margin-top: 20px;
+                    transition: 0.3s;
+                }
+
+                .input{
+                    margin-bottom: 20px;
+                    text-align: left;
+                    width:80%;
+                    padding: 15px;
+                    font-size: 16px;
+                    border: 2px solid white;
+                    border-radius: 6px;
+                    outline: none;
+                    box-sizing: border-box;
+                }
+
+               
+
+                .l3{
+                    margin-left: 80px;
+                }
+
+                .signup-link{
+                    margin-top: 30px;
+                    padding-left: 30px;
+                }
+
+           
+        </style>
+    </head>
+    <body>
+  
+    <div class="navbar">
+        
+            <div class="logo">
+                 <img class="img1" src="miw logo.png" rel="stylesheet">
+                    <h2>MIW Digital Services</h2>
+                    </div>
+                <ul>
+           <li> <a href="index.html">HOME </a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="seo.html">SERVICES</a></li>
+            <li><a href="case.html">CASE STUDIES</a></li>
+            <li><a href="blog.html">BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+            </ul>
+            </div>
+   
+   <form id="loginForm">
+        <div class="cont-form">
+            <h2 class="h22">Welcome Back</h2>
+            <p class="p2">Login to your MiWeb Digital Service Account</p>
+                    <div class="fields">
+                    <label class="l1" for="email">Email</label><br>
+                    <input class="input" type="email" placeholder="enter your email" required><br>
+                    <br>
+                    <label class="l2" for="password">Password</label><br>
+                    <input class="input" type="password" placeholder="enter your password" required><br>
+                    </div>
+                    <br>
+                    <label class="l3"><input type="checkbox">Remember me</label>
+                        <br>
+                     <button type="submit" class="btn">Login</button><br>
+
+    
+            <div class="signup-link">
+                don't have an account?
+                <a href="signup.html">Sign Up</a>
+                 </div>
+   </form>
+   
+            </div>
+        </div>
+        <script>
+            const form=document.getElementById('loginForm');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Logged in Successfully');
+                window.location.href="index.html";
+            });
+
+            </script>
+      
+        
+    </body>
+</html>
