@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us | Our Company</title>
+        <style>
+            /* CSS reset and variables */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            }
+
+            :root {
+                --primary: #2563eb;
+                --primary-dark: #1d4ed8;
+                --text-dark: #1e293b;
+                --text-light: #64748b;
+                --white: #ffffff;
+                --max-width: 1100px;
+            }
+
+            body {
+                background-color: var(--white);
+                color: var(--text-dark);
+                line-height: 1.6;
+            }
+
+            .navbar{
+                background-color: #1a1a1a;
+                color:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+                gap:20px;
+            }
+            
+            .menu a{
+                color:white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: 500;
+            }
+
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+                color: #ff9800;
+                display: flex;
+                align-items: center;
+                gap:10px;}
+
+            .logo img{
+                height:80px;
+            }
+
+
+            /* utility components */
+            .container {
+                max-width: var(--max-width);
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+
+            section {
+                padding: 5rem 0;
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: 2.25rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+                position: relative;
+            }
+
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 4px;
+                background-color: var(--primary);
+                border-radius: 2px;
+            }
+
+            /* hero section */
+            .hero {
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                color: var(--white);
+                padding: 8rem 0;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+                font-weight: 800;
+                margin-bottom: 1.5rem;
+                letter-spacing: -0.5px;
+            }
+
+            .hero p {
+                font-size: 1.25rem;
+                color:aliceblue;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            /* story / mission */
+            .story-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                align-items: center;
+            }
+
+            .story-text h2 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+                color: var(--text-dark);
+            }
+
+            .story-text p {
+                color: var(--text-light);
+                margin-bottom: 1.25rem;
+            }
+
+            .story-image img {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+                gap: 2rem;
+            }
+
+            /* core values section */
+            .values-section {
+                background-color: var(--bg-light);
+            }
+
+            .values-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+
+            .value-card {
+                background: var(--white);
+                padding: 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+            }
+
+            .value-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .value-icon {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                display: inline-block;
+            }
+
+            .value-card h3 {
+                font-size: 1.35rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .value-card p {
+                color: var(--text-light);
+                font-size: 0.95rem;
+            }
+
+            /* team section */
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+                gap: 2.5rem;
+            }
+
+            .team-member {
+                text-align: center;
+            }
+
+            .member-img {
+                width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 1rem;
+                background-color: #e2e8f0;
+            }
+
+            .team-member h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .team-member p {
+                color: var(--primary);
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+
+            
+            footer {
+                background: #111;
+                color: white;
+                text-align: center;
+                padding: 18px;
+                font-size: 15px;
+            }
+
+            /* responsive queries */
+            @media (max-width: 768px) {
+                .hero h1 { font-size: 2.5rem; }
+                .hero p { font-size: 1.1rem; }
+                .story-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+                .section { padding: 4rem; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+           
+            <div class="logo">
+            <img src="miweb.png" rel="stylesheet"> MIW Digital Solutions</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html"> About Us</a>
+                <a href="seo.html">SEO Services</a>
+                <a href="case.html">Case Studies</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+
+        <header class="hero">
+            <div class="container">
+                <h1>We are on mission to innovate.</h1>
+                <p>Empowering teams worldwide with beautiful, functional, and modern solutions to scale their digital realities.</p>
+            </div>
+        </header>
+
+        <section>
+             <div class="container">
+                 <div class="story-grid">
+                     <div class="story-text">
+                        <h2>Our Journey So Far</h2>
+                        <p>Founded with a vision to break down digital complexities, our company began as a small collective of designers and tech innovators. Over the years, we've scaled into a global operation committed to excellence.</p>
+                        <p>We believe that regular steps toward a unified goal change the world. By putting users first, we constantly push boundaries to build software that is both purposeful and easy to enjoy.</p>
+                    </div>
+                    <div class="story-image">
+                        <!-- Placeholder placeholder image using Unsplash -->
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Our Team working together">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">What Drives Us</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <span class="value-icon">💡</span>
+                    <h3>Innovation First</h3>
+                    <p>We lean into the future, experimenting intentionally to produce smart answers to legacy challenges.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">🤝</span>
+                    <h3>Radical Transparency</h3>
+                    <p>Clear communication builds trust. We maintain strict openness with our staff and our clients alike.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">⚡</span>
+                    <h3>Velocity & Quality</h3>
+                    <p>We move intentionally fast without cutting corners, maintaining an emphasis on bulletproof stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Meet Our Members </h2>
+            <div class="team-grid">
+                <div class="team-member">
+            
+                    <h3>Chaithanya</h3>
+                    <p>Team Member</p>
+                </div>
+                <div class="team-member">
+                   
+                    <h3>Pavan</h3>
+                    <p>Team Member</p>
+                </div>
+                <div class="team-member">
+                   
+                    <h3>Fathima</h3>
+                    <p>Team Member</p>
+                </div>
+                <div class="team-member">
+                   
+                    <h3>Swathy</h3>
+                    <p>Team Member</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2026 Micro Info Web. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
