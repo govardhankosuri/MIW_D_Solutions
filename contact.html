@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Contact Us</title>
+   <style>
+    *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .navbar{
+                background-color: #1a1a1a;
+                color:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+                gap:20px;
+            }
+            
+            .menu a{
+                color:white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: 500;
+            }
+
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+                color: #ff9800;
+                display: flex;
+                align-items: center;
+                gap:10px;}
+
+            .logo img{
+                height:80px;
+            }
+    body{
+        background-color: antiquewhite;
+    }
+    .hero{
+        background:linear-gradient(135deg,#004aad,#007bff);
+        color: white;
+        text-align: center;
+        padding: 40px 10px;
+    }
+    .hero h1{
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 60px auto;
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .contact-info{
+        flex: 1;
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    }
+    .contact-info h2{
+        color: #007bff;
+        margin-bottom: 25px;
+    }
+    .info{
+        margin-bottom: 25px;
+
+    }
+    .info h3{
+        color: #007bff;
+        margin-bottom: 8px;
+    }
+    .info p {
+        color: #555;
+        line-height: 28px;
+    }
+    .contact-form{
+        flex: 1;
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .contact-form h2{
+        color: #007bff;
+        margin-bottom: 25px;
+    }
+    input, select, textarea{
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    textarea{
+        resize: none;
+    }
+    button{
+        width: 100%;
+        background: #007bff;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover{
+        background: #0056b3;
+    }
+    .footer{
+        text-align: center;
+        padding: 20px;
+        background: #250f0f;
+        margin-top: 40px;
+        background: linear-gradient(135deg,#004aad,#007bff);
+    }
+    footer p{
+        color: white;
+    }
+  @media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 35px;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <div class="navbar">
+           
+            <div class="logo">
+            <img src="https://miweb.co.in/uploads/website-images/favicon-2026-03-24-09-36-10-2274.png" rel="stylesheet"> MIW Digital Solutions</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html"> About Us</a>
+                <a href="seo.html">SEO Services</a> 
+                <a href="case.html">Case Studies</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+    <!--hero part-->
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>We are here to Help Your Business with Digital Solutions</p>
+        </section>
+
+
+    <!--contact section-->
+    <div class="container">
+
+    <!--office details-->
+
+    <div class="contact-info">
+        <h2>Office Details</h2>
+    <div class="info">
+        <h3>🏛 Office Info</h3>
+        <p>MIW Digital Services</p>
+    </div>  
+    <div class="info">
+        <h3>&#128205 Address</h3>  
+        <p>2nd Floor, 204,<br>
+           Vasukamal Express,Rohan Sehar Lane,<br>
+           Pancard club road, Samartha Colony,<br>
+           Pune,Maharashtra ,411069
+        </p>
+        </div>
+    <div class="info">
+        <h3>📞 Phone</h3>
+        <p> 
+            +91 9403893426
+        </p>
+
+    </div>
+    <div class="info">
+        <h3>📧 Email</h3>
+        <p>hr@mail.miweb.co.in</p>
+    </div>
+    <div class="info">
+        <h3>🌐 Website</h3>
+        <p>www.miwdigitalservices.com</p>
+    </div>
+    <div class="info">
+        <h3>🕐 Working Hours</h3>
+        <p>Monday-Friday<br>
+        9:30 AM to 7:00 PM</p>
+    </div>
+   </div>
+
+
+    <!--Inquiry Form-->
+    <div class="contact-form">
+        <h2>Send Inquiry</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <input type="text" placeholder="Company Name">
+        <select required>
+            <option value="">Select Service</option>
+            <option >Web Development</option>
+            <option >Website Development</option>
+            <option >Web app Development</option>
+            <option >Digital Marketing</option>
+            <option >UI/UX Design</option>
+            <option >SEO Services</option>
+            <option>Cloud Solutions</option>
+            <option>Software Testing</option>
+            <option>Others</option>
+        </select>
+        <textarea rows="6" placeholder="Write Your Inquiry..." required></textarea>
+        <button type="Submit">Send Inquiry</button>
+    </form>
+  </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 MIW Digital Services. All rights reserved.</p>  
+  </footer>
+  </body>
+</html>
