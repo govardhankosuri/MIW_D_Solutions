@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" description="width=device-width initial-scale=1.0">
+    </head>
+    <style>
+        header{
+            background-color: blue;
+            color: aliceblue;
+            height: 60px;
+            top: 0;
+        }
+
+        header .logo{
+            float:left;
+        }
+
+        header .menu{
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+
+
+
+            .navbar{
+                background-color: #1a1a1a;
+                color:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+                gap:10px;
+                padding-top: 50px;
+            }
+            
+            .menu a{
+                color:white;
+                text-decoration: none;
+                margin-left:60px;
+                font-weight: 500;
+                margin-top: 40px;
+            }
+
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+                color: #fffefd;
+                display: flex;
+                align-items: center;
+                gap:10px;}
+
+            .logo img{
+                height:60px;
+            }
+
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: #4c82a1;
+        }
+
+      
+
+        .logo-text{
+            color: #fff;
+            font-size: 18px;
+            margin: 10px;
+             padding: 0px;
+        }
+
+     
+
+     
+        .navbar a{
+             color: white;
+             text-decoration: none;
+             font-weight: 600;
+             font-size: 20px;
+             margin-right: 15px;
+           
+        }
+
+        .menu a:hover{
+            border: 2px solid white;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+            .hero{
+                text-align: center;
+                padding: 60px 20px;
+                background:linear-gradient(to bottom, #676b9c,#2e07f5);
+                color: white;
+            }
+
+            .hero h1{
+                font-size: 38px;
+                opacity: 0.9;
+            }
+
+            .hero p{
+                font-size: 17px;
+                opacity: 0.9;
+            }
+
+          .container{
+                max-width: 1000px;
+                margin-left: 70px ;
+                padding-top: 0px;
+          }
+
+          .blog-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(320px));
+            gap:60px;
+          }
+
+          .blog-card{
+            background: whitesmoke;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 9px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3;
+            margin-top: 20px auto;
+            display: flex;
+            align-items: stretch;
+            min-height: 320px;
+          
+          }
+
+          .blog-card:hover{
+            transform:translateY(-8px);
+          }
+
+        .blog-card img{
+          
+            object-fit: cover;
+              width: 50%;
+            height: 320px;
+          }
+
+          .blog-content{
+            padding: 40px;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            width: 50%;
+          }
+
+          .blog-content h3{
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #f50418;
+          }
+
+          .blog-content p{
+            font-size: 14px;
+            color: #3105f5;
+            line-height: 1.6;
+            margin-bottom: 10px;
+          }
+
+        footer{
+            background-color: blue;
+            height: 50px;
+            color: #fff;
+            font-size: 19px;
+            padding-left:310px;
+            padding-top: 3px;
+        }
+    </style>
+    <body>
+   <header>
+           
+           
+            <div class="logo">
+            <img src="miweblogo.png" rel="stylesheet"> MIW Digital Solutions</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html"> About Us</a>
+                <a href="seo.html">SEO Services</a>
+                <a href="case.html">Case Studies</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+           
+    </header>
+
+
+    <!--hero-->
+    <section class="hero">
+          <h1>Our Digital Marketing Blog</h1>
+          <p> Lateset tips,trends & strategies to grow your bussiness online.</p>
+    </section>
+
+      <!--blog grid-->
+    <div class="container">
+        <div class="blog-grid">
+
+            <!--blog 1-->
+            <div class="blog-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3JZ8oSI7wDYvaEfQ5wnHD-QCB7AF26d0UDO6UMQdpzfaiYGkZFG1ovQ&s=10" rel="stylesheet">
+                <div class="blog-content">
+                    <h3>Connecting with global Organizations & Industries.</h3>
+                    <p>Unlock global global growth with expert insights on cross border <b> B2B networking <br>
+                    international trade</b> and strategic <b>corporate partnerships.</b> discover how to align <br>
+                    your bussiness with worldwide industry leaders and scale your Organization across borders.</p>
+                </div>
+            </div>
+
+             <div class="blog-card">
+                <img src="https://t4.ftcdn.net/jpg/03/00/14/39/360_F_300143961_8kJTPiTbWallCIBxO0GQzoxgwE9cIRGG.jpg" rel="stylesheet">
+                <div class="blog-content">
+                    <h3>For Tech,Innovations & Startups.</h3>
+                    <p> Bridge the gap between local innovations and the international market. We explore the latest<br>
+                    trends in <b>global tect ecosystems,cross border collborations,</b>and strategies for founders <br>
+                    looking to connect with worldwide industry leaders. </p>
+                </div>
+            </div>
+
+                <div class="blog-card">
+                <img src="https://www.hkgsouq.com/wp-content/uploads/2025/09/1732702495204.jpg" rel="stylesheet">
+                <div class="blog-content">
+                    <h3>For Supply Chain & Logistics.</h3>
+                    <p> Navigate the complexities of global supply chains and international trade. Get actionable <br>
+                    strategies for optimizing<b> logistics, </b>resilient <b>world networks,</b>and fostering partnerships <br>
+                    across worldwide industries and organizations. </p>
+                </div>
+            </div>
+
+              <div class="blog-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlg3AgZXgOArXt6KcQgab9H6FtpFnRgnHkplYkzabfcA&s=10" rel="stylesheet">
+                <div class="blog-content">
+                    <h3>Growing and Helping To Build Careers With Professional Networking.</h3>
+                    <p> Expanding your professional footprint beyond borders. Learn proven strategies to network<br>
+                     with<b> international executives,</b> leverage <b>global industry associations,</b> and build a<br>
+                    impactful worldwide career.</p>
+                </div>
+            </div>
+
+               
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2026 MiWeb Digital Services. All Rights Reserved. | Grow Your Bussiness Online.</p>
+    </footer>
+    </body>
+</html>
